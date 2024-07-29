@@ -1,0 +1,4 @@
+Name,Template,Reference
+starter-go-afs-folder, fs/folder, [starter-go-afs]
+starter-go-afs-link,   fs/link,   [starter-go-afs]
+starter-go-afs-file,   fs/file,   [starter-go-afs]

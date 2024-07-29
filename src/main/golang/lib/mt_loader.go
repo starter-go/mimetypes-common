@@ -35,6 +35,7 @@ func (inst *CommonMediaTypesLoader) listCSVFilePaths() []string {
 	list = append(list, base+"multipart.csv")
 	list = append(list, base+"text.csv")
 	list = append(list, base+"video.csv")
+	list = append(list, base+"other.csv")
 	return list
 }
 
@@ -132,6 +133,7 @@ func (inst *innerTypeListBuilder) handleRow(name, template, suffixes string) err
 	item := &mimetypes.Registration{
 		Name:     name,
 		Suffixes: inst.parseSuffixes(suffixes),
+		Priority: 99,
 	}
 
 	info := &item.Info
