@@ -13,6 +13,6 @@ require (
 	github.com/starter-go/afs v0.9.5 // indirect
 	github.com/starter-go/base v0.9.11 // indirect
 	github.com/starter-go/configen v0.9.5 // indirect
-	github.com/starter-go/mimetypes v0.0.2
+	github.com/starter-go/mimetypes v0.0.4
 	github.com/starter-go/vlog v0.9.8 // direct
 )
