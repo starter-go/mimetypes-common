@@ -128,7 +128,13 @@ func (inst *innerTypeListBuilder) parseRow(iRow int, text string) error {
 	return inst.handleRow(a, b, s)
 }
 
+func (inst *innerTypeListBuilder) remakeName(template string) string {
+	return strings.ReplaceAll(template, "/", "-")
+}
+
 func (inst *innerTypeListBuilder) handleRow(name, template, suffixes string) error {
+
+	name = inst.remakeName(template)
 
 	item := &mimetypes.Registration{
 		Name:     name,
@@ -137,9 +143,9 @@ func (inst *innerTypeListBuilder) handleRow(name, template, suffixes string) err
 	}
 
 	info := &item.Info
-	info.Icon = "/image/media/types/" + name + ".png"
-	info.Label = "{{strings.media.types." + name + ".label}}"
-	info.Description = "{{strings.media.types." + name + ".description}}"
+	info.Icon = "" // 由其它注册项提供
+	info.Label = "{{strings.mediatypes." + name + ".label}}"
+	info.Description = "{{strings.mediatypes." + name + ".description}}"
 	info.Type = mimetypes.Type(template)
 
 	inst.list = append(inst.list, item)
