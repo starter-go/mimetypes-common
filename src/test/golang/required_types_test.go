@@ -7,12 +7,12 @@ import (
 	"github.com/starter-go/units"
 )
 
-func TestFindType(t *testing.T) {
+func TestRequiredSuffixList(t *testing.T) {
 	args := []string{}
 	mod := getModuleT()
 	cfg := &units.Config{
 		Args:       args,
-		Cases:      unit.NameFindType,
+		Cases:      unit.NameRequiredSuffixList,
 		Module:     mod,
 		Properties: nil,
 		T:          t,
@@ -21,12 +21,12 @@ func TestFindType(t *testing.T) {
 	units.Run(cfg)
 }
 
-func TestListTypes(t *testing.T) {
+func TestRequiredTypeList(t *testing.T) {
 	args := []string{}
 	mod := getModuleT()
 	cfg := &units.Config{
 		Args:       args,
-		Cases:      unit.NameListTypes,
+		Cases:      unit.NameRequiredTypeList,
 		Module:     mod,
 		Properties: nil,
 		T:          t,

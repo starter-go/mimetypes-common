@@ -34,6 +34,7 @@ func (inst*autoRegistrar) addAll() error {
     inst.register(&pccc8cc1735_unit_DemoUnit{})
     inst.register(&pccc8cc1735_unit_FindTypeUnit{})
     inst.register(&pccc8cc1735_unit_ListTypesUnit{})
+    inst.register(&pccc8cc1735_unit_RequiredTypesUnit{})
 
 
     return nil

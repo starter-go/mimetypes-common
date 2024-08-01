@@ -1,4 +1,4 @@
 Name,Template,Reference
-starter-go-afs-folder, fs/folder, [starter-go-afs]
-starter-go-afs-link,   fs/link,   [starter-go-afs]
-starter-go-afs-file,   fs/file,   [starter-go-afs]
+starter-go-afs-folder, fs/folder, [starter-go-afs],(.x-fs-folder)
+starter-go-afs-link,   fs/link,   [starter-go-afs],(.x-fs-link)
+starter-go-afs-file,   fs/file,   [starter-go-afs],(.x-fs-file)

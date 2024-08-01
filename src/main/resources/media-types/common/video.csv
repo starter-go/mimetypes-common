@@ -1,6 +1,6 @@
 Name,Template,Reference
 1d-interleaved-parityfec,video/1d-interleaved-parityfec,[RFC6015]
-3gpp,video/3gpp,[RFC3839][RFC6381]
+3gpp,video/3gpp,[RFC3839][RFC6381],(.3gp)
 3gpp2,video/3gpp2,[RFC4393][RFC6381]
 3gpp-tt,video/3gpp-tt,[RFC4396]
 AV1,video/AV1,[Alliance_for_Open_Media]
@@ -31,14 +31,14 @@ matroska-3d,video/matroska-3d,[RFC-ietf-cellar-matroska-21]
 mj2,video/mj2,[RFC3745]
 MP1S,video/MP1S,[RFC3555]
 MP2P,video/MP2P,[RFC3555]
-MP2T,video/MP2T,[RFC3555]
-mp4,video/mp4,[RFC4337][RFC6381]
+MP2T,video/MP2T,[RFC3555],(.ts)
+mp4,video/mp4,[RFC4337][RFC6381],(.mp4)
 MP4V-ES,video/MP4V-ES,[RFC6416]
 MPV,video/MPV,[RFC3555]
-mpeg,,[RFC2045][RFC2046]
+mpeg,video/mpeg,[RFC2045][RFC2046],(.mpeg)
 mpeg4-generic,video/mpeg4-generic,[RFC3640]
 nv,video/nv,[RFC4856]
-ogg,video/ogg,[RFC5334][RFC7845]
+ogg,video/ogg,[RFC5334][RFC7845],(.ogv)
 parityfec,video/parityfec,[RFC3009]
 pointer,video/pointer,[RFC2862]
 quicktime,video/quicktime,[RFC6381][Paul_Lindner]
@@ -91,3 +91,6 @@ vnd.youtube.yt,video/vnd.youtube.yt,[Google]
 vnd.vivo,video/vnd.vivo,[John_Wolfe]
 VP8,video/VP8,[RFC7741]
 VP9,video/VP9,[RFC-ietf-payload-vp9-16]
+
+avi,video/x-msvideo,[ext],(.avi)
+webm,video/webm,[ext],(.webm)

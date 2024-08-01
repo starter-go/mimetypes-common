@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/starter-go/mimetypes"
-	"github.com/starter-go/mimetypes/src/test/golang/unit/unitnames"
 	"github.com/starter-go/units"
 )
 
@@ -24,7 +23,7 @@ func (inst *ListTypesUnit) _impl() units.Units { return inst }
 func (inst *ListTypesUnit) Units(list []*units.Registration) []*units.Registration {
 
 	list = append(list, &units.Registration{
-		Name:     unitnames.ListTypes,
+		Name:     NameListTypes,
 		Enabled:  true,
 		Priority: 0,
 		Test:     inst.test1,

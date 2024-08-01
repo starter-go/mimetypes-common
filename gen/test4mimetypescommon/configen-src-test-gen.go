@@ -132,6 +132,50 @@ func (inst*pccc8cc1735_unit_ListTypesUnit) getTM(ie application.InjectionExt)p85
 
 
 
+// type pccc8cc173.RequiredTypesUnit in package:github.com/starter-go/mimetypes-common/src/test/golang/unit
+//
+// id:com-ccc8cc1735d8ba89-unit-RequiredTypesUnit
+// class:class-0dc072ed44b3563882bff4e657a52e62-Units
+// alias:
+// scope:singleton
+//
+type pccc8cc1735_unit_RequiredTypesUnit struct {
+}
+
+func (inst* pccc8cc1735_unit_RequiredTypesUnit) register(cr application.ComponentRegistry) error {
+	r := cr.NewRegistration()
+	r.ID = "com-ccc8cc1735d8ba89-unit-RequiredTypesUnit"
+	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Units"
+	r.Aliases = ""
+	r.Scope = "singleton"
+	r.NewFunc = inst.new
+	r.InjectFunc = inst.inject
+	return r.Commit()
+}
+
+func (inst* pccc8cc1735_unit_RequiredTypesUnit) new() any {
+    return &pccc8cc173.RequiredTypesUnit{}
+}
+
+func (inst* pccc8cc1735_unit_RequiredTypesUnit) inject(injext application.InjectionExt, instance any) error {
+	ie := injext
+	com := instance.(*pccc8cc173.RequiredTypesUnit)
+	nop(ie, com)
+
+	
+    com.TM = inst.getTM(ie)
+
+
+    return nil
+}
+
+
+func (inst*pccc8cc1735_unit_RequiredTypesUnit) getTM(ie application.InjectionExt)p85a4d026d.Manager{
+    return ie.GetComponent("#alias-85a4d026daf77828ef49edb2adfd695e-Manager").(p85a4d026d.Manager)
+}
+
+
+
 // type p749c9040e.DemoTypes in package:github.com/starter-go/mimetypes-common/src/test/golang/unit/demotypes
 //
 // id:com-749c9040ec595c54-demotypes-DemoTypes

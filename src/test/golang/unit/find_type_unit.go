@@ -5,7 +5,6 @@ import (
 
 	"github.com/starter-go/i18n"
 	"github.com/starter-go/mimetypes"
-	"github.com/starter-go/mimetypes/src/test/golang/unit/unitnames"
 	"github.com/starter-go/units"
 	"github.com/starter-go/vlog"
 )
@@ -27,7 +26,7 @@ func (inst *FindTypeUnit) _impl() units.Units { return inst }
 func (inst *FindTypeUnit) Units(list []*units.Registration) []*units.Registration {
 
 	list = append(list, &units.Registration{
-		Name:     unitnames.FindType,
+		Name:     NameFindType,
 		Enabled:  true,
 		Priority: 0,
 		Test:     inst.test1,
